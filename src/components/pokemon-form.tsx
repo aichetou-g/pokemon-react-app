@@ -134,17 +134,27 @@ const PokemonForm: FunctionComponent<Props> = ({ pokemon }) => {
                                     <label htmlFor="name">Nom</label>
                                     <input id="name" name='name' type="text" className="form-control" value={form.name.value} onChange={e => handleInput(e)}></input>
                                     {form.name.error &&
-                                        <div className='card-panel red accent-1'>{form.name.error}</div>}
+                                        <div className='card-panel red accent-1'>{form.name.error}
+                                        </div>
+                                    }
                                 </div>
                                 {/* Pokemon hp */}
                                 <div className="form-group">
                                     <label htmlFor="hp">Point de vie</label>
                                     <input id="hp" name='hp' type="number" className="form-control" value={form.hp.value} onChange={e => handleInput(e)}></input>
+                                    {form.hp.error &&
+                                        <div className='card-panel red accent-1'>{form.name.error}
+                                        </div>
+                                    }
                                 </div>
                                 {/* Pokemon cp */}
                                 <div className="form-group">
                                     <label htmlFor="cp">Dégâts</label>
                                     <input id="cp" name='cp' type="number" className="form-control" value={form.cp.value} onChange={e => handleInput(e)}></input>
+                                    {form.cp.error &&
+                                        <div className='card-panel red accent-1'>{form.name.error}
+                                        </div>
+                                    }
                                 </div>
                                 {/* Pokemon types */}
                                 <div className="form-group">
