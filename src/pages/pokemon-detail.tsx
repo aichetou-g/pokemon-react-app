@@ -4,6 +4,7 @@ import formatDate from '../helpers/format-date';
 import formatType from '../helpers/format-type';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
+import Loader from '../components/loader';
 
 type Params = { id: string };
 
@@ -68,7 +69,12 @@ const PokemonsDetail: FunctionComponent = () => {
                     </div>
                 </div>
             ) : (
-                <h4 className="center">Aucun pokémon à afficher !</h4>
+                <div className="center">
+                    <Loader />
+                    <div className="card-action">
+                        <Link to="/" className='chip'>Retour</Link>
+                    </div>
+                </div>
             )}
         </div>
     );

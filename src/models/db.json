@@ -93,16 +93,6 @@
       "types": [
         "Feu"
       ]
-    },
-    {
-      "id": 1734624938222,
-      "hp": 100,
-      "cp": 10,
-      "name": "ASSA",
-      "picture": "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/000.png",
-      "types": [
-        "Normal"
-      ]
     }
   ]
 }

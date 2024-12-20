@@ -1,8 +1,9 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import PokemonForm from '../components/pokemon-form';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
+import Loader from '../components/loader';
 
 type Params = { id: string };
 
@@ -24,7 +25,13 @@ const PokemonEdit: FunctionComponent = () => {
                     <PokemonForm pokemon={pokemon} isEdit={true}></PokemonForm>
                 </div>
             ) : (
-                <h4 className="center">Aucun pokémon à afficher !</h4>
+                <div className="center">
+                    <Loader />
+                    <div className="card-action">
+                        <Link to="/" className='chip'>Retour</Link>
+                    </div>
+                </div>
+
             )}
         </div>
     );
