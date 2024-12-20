@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import formatType from '../helpers/format-type';
 import Pokemon from '../models/pokemon';
 import PokemonService from '../services/pokemon-service';
-import checkForm from '../helpers/check-form';
 
 type Props = {
     pokemon: Pokemon,

@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "An awesome application to handle some pokemons.",
     "dependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@types/node": "^22.10.2",
         "@types/react": "^19.0.1",
         "@types/react-dom": "^19.0.2",

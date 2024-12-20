@@ -7,7 +7,6 @@ import PokemonSearch from '../components/pokemon-search';
 const PokemonList: FunctionComponent = () => {
 
     const pokemons = usePokemons()
-
     return (
         <div>
             <h1 className="center">Pokédex</h1>

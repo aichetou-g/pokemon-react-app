@@ -93,6 +93,18 @@
       "types": [
         "Feu"
       ]
+    },
+    {
+      "id": 1734690999024,
+      "hp": 100,
+      "cp": 10,
+      "name": "Thillo",
+      "picture": "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/222.png",
+      "types": [
+        "Poison",
+        "Combat",
+        "Feu"
+      ]
     }
   ]
 }
